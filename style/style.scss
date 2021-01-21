@@ -1,0 +1,235 @@
+/** @format */
+// VAriables
+$green-color: #9bcb3c;
+$heading-font: 'Neuville';
+$text-font: 'flinkregular';
+$text-color: 6a6e72;
+$bg-color: #eee;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'flinkregular' !important;
+	font-weight: 400;
+	box-shadow: none !important;
+	background-color: $bg-color !important;
+	color: #6a6e72 !important;
+	font-size: 18px;
+	line-height: 28px;
+}
+main {
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('/images/hero.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	background-attachment: fixed;
+}
+
+// NavBar
+
+nav {
+	// padding: 30px 50px;
+	height: 180px;
+	.logo img {
+		width: 270px;
+		height: auto;
+		padding: 10px;
+	}
+
+	.navbar-nav li {
+		padding: 20px;
+	}
+
+	.navbar-nav li a {
+		font-family: 'Neuville' !important;
+		font-weight: bold;
+		font-size: 1rem;
+		color: white !important;
+		transition: 0.4s ease all;
+
+		&:hover {
+			color: $green-color !important;
+		}
+	}
+}
+.hero {
+	height: calc(100vh - 180px);
+	position: relative;
+}
+.hero h1 {
+	line-height: 1.1;
+	font-weight: 400;
+	letter-spacing: -0.04em;
+	position: absolute;
+	top: 10%;
+	left: 30px;
+	color: #fff;
+	width: 62%;
+	font-size: 60px;
+}
+
+// Partnership Section
+.partners {
+	background: white;
+}
+.partnership {
+	font-family: $text-font;
+
+	width: 50%;
+	text-align: center;
+	margin: auto;
+
+	p {
+		font-size: 25px;
+		line-height: 1.2;
+		color: $text-color;
+	}
+}
+
+// Our Mission Section
+.our-mission {
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('/images/girl-with-laptop.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	background-attachment: fixed;
+
+	.our-mission-div {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: white;
+
+		h1 {
+			margin-bottom: 35px;
+			line-height: 1;
+			font-weight: 400;
+			letter-spacing: -0.04em;
+			font-size: 80px;
+		}
+
+		p {
+			font-weight: 400;
+			letter-spacing: -0.04em;
+			line-height: 1.5;
+			font-size: 24px;
+		}
+	}
+}
+
+// What we oferr
+.what-we-offer {
+	height: 100vh;
+	background: white;
+	position: relative;
+	overflow: hidden;
+
+	.what-we-offer-div {
+		display: flex;
+		justify-content: space-around;
+
+		.left-part {
+			margin: 70px 30px;
+			max-width: 16%;
+
+			h1 {
+				margin-bottom: 22px;
+				line-height: 1.2;
+				color: $green-color;
+				font-weight: 400;
+				letter-spacing: -0.04em;
+				font-size: 40px;
+			}
+			p {
+				color: #6a6e72;
+				font-weight: 400;
+				letter-spacing: -0.04em;
+				margin-bottom: 30px;
+				font-size: 18px;
+				line-height: 1.5;
+			}
+		}
+
+		figure {
+			height: 100vh;
+
+			img {
+				height: 100%;
+			}
+		}
+
+		.strategic-hr-support {
+			margin: 70px 30px;
+			max-width: 16%;
+			height: 50px;
+			cursor: pointer;
+
+			h3 {
+				color: #6a6e72;
+				font-weight: 400;
+				letter-spacing: 0.04em;
+				margin-bottom: 30px;
+				font-size: 30px;
+				line-height: 1.5;
+			}
+		}
+	}
+
+	.hr-operation-support {
+		position: absolute;
+		bottom: 70px;
+		left: 150px;
+		cursor: pointer;
+
+		h3 {
+			color: #6a6e72;
+			font-weight: 400;
+			letter-spacing: -0.04em;
+			margin-bottom: 30px;
+			font-size: 30px;
+			line-height: 1.5;
+		}
+	}
+
+	// hover-cards
+	.hover-cards {
+		color: $text-color;
+		position: absolute;
+		bottom: 10%;
+		right: 0;
+		display: none;
+		transition: 0.4s ease-in-out;
+
+		h5 {
+			color: rgb(90, 35, 25);
+		}
+	}
+
+	.hover-card-2 {
+		color: $text-color;
+		position: absolute;
+		bottom: 20%;
+		left: 5%;
+		display: none;
+		transition: 0.4s ease-in-out;
+
+		h5 {
+			color: rgb(90, 35, 25);
+		}
+	}
+}
+
+// show and hide cards on hover
+.show {
+	display: block !important;
+}

@@ -1,0 +1,225 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'flinkregular' !important;
+  font-weight: 400;
+  box-shadow: none !important;
+  background-color: #eee !important;
+  color: #6a6e72 !important;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+main {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+nav {
+  height: 180px;
+}
+
+nav .logo img {
+  width: 270px;
+  height: auto;
+  padding: 10px;
+}
+
+nav .navbar-nav li {
+  padding: 20px;
+}
+
+nav .navbar-nav li a {
+  font-family: 'Neuville' !important;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white !important;
+  transition: 0.4s ease all;
+}
+
+nav .navbar-nav li a:hover {
+  color: #9bcb3c !important;
+}
+
+.hero {
+  height: calc(100vh - 180px);
+  position: relative;
+}
+
+.hero h1 {
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  position: absolute;
+  top: 10%;
+  left: 30px;
+  color: #fff;
+  width: 62%;
+  font-size: 60px;
+}
+
+.partners {
+  background: white;
+}
+
+.partnership {
+  font-family: "flinkregular";
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.partnership p {
+  font-size: 25px;
+  line-height: 1.2;
+  color: 6a6e72;
+}
+
+.our-mission {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/girl-with-laptop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+.our-mission .our-mission-div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.our-mission .our-mission-div h1 {
+  margin-bottom: 35px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  font-size: 80px;
+}
+
+.our-mission .our-mission-div p {
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.what-we-offer {
+  height: 100vh;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.what-we-offer .what-we-offer-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.what-we-offer .what-we-offer-div .left-part {
+  margin: 70px 30px;
+  max-width: 16%;
+}
+
+.what-we-offer .what-we-offer-div .left-part h1 {
+  margin-bottom: 22px;
+  line-height: 1.2;
+  color: #9bcb3c;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  font-size: 40px;
+}
+
+.what-we-offer .what-we-offer-div .left-part p {
+  color: #6a6e72;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.what-we-offer .what-we-offer-div figure {
+  height: 100vh;
+}
+
+.what-we-offer .what-we-offer-div figure img {
+  height: 100%;
+}
+
+.what-we-offer .what-we-offer-div .strategic-hr-support {
+  margin: 70px 30px;
+  max-width: 16%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.what-we-offer .what-we-offer-div .strategic-hr-support h3 {
+  color: #6a6e72;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.what-we-offer .hr-operation-support {
+  position: absolute;
+  bottom: 70px;
+  left: 150px;
+  cursor: pointer;
+}
+
+.what-we-offer .hr-operation-support h3 {
+  color: #6a6e72;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.what-we-offer .hover-cards {
+  color: 6a6e72;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  display: none;
+  transition: 0.4s ease-in-out;
+}
+
+.what-we-offer .hover-cards h5 {
+  color: #5a2319;
+}
+
+.what-we-offer .hover-card-2 {
+  color: 6a6e72;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  display: none;
+  transition: 0.4s ease-in-out;
+}
+
+.what-we-offer .hover-card-2 h5 {
+  color: #5a2319;
+}
+
+.show {
+  display: block !important;
+}
