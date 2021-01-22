@@ -10,6 +10,13 @@ $bg-color: #eee;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+h1 {
+	font-size: 2rem;
+	color: $green-color;
+	font-family: $heading-font;
+}
+
 body {
 	font-family: 'flinkregular' !important;
 	font-weight: 400;
@@ -232,4 +239,340 @@ nav {
 // show and hide cards on hover
 .show {
 	display: block !important;
+}
+
+// OUR PROCESS
+.our-process {
+	height: auto;
+	z-index: 10;
+	position: relative;
+
+	.diagnostics {
+		margin: 150px 0px;
+		cursor: pointer;
+
+		p {
+			color: #6a6e72;
+			font-weight: 400;
+			letter-spacing: 0.04em;
+			font-size: 30px;
+			line-height: 1.5;
+			border: 1px solid $green-color;
+			border-radius: 10px;
+			padding: 8px 50px;
+			text-align: center;
+		}
+	}
+
+	figure {
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 100vh;
+		}
+	}
+
+	.process-div {
+		margin-top: 70px;
+		h1 {
+			color: $green-color;
+			font-size: 50px;
+			font-weight: bold;
+			font-family: $heading-font;
+			margin-bottom: 15px;
+		}
+		p {
+			color: #6a6e72;
+			font-weight: 400;
+			letter-spacing: 0.08em;
+			font-size: 1.3rem;
+			line-height: 1.1;
+
+			margin-top: 30px;
+		}
+		.five-step-process {
+			color: #6a6e72;
+			font-weight: 400;
+			letter-spacing: 0.04em;
+			font-size: 30px;
+			line-height: 1.5;
+			border: 1px solid $green-color;
+			border-radius: 10px;
+			padding: 8px 50px;
+			text-align: center;
+			margin-top: 70px;
+			cursor: pointer;
+		}
+	}
+
+	.after-act {
+		margin-top: 100px;
+	}
+	.impl,
+	.live-op,
+	.after-act {
+		position: relative;
+	}
+	.live-op .col-md-5 {
+		position: absolute;
+		right: 20px;
+		z-index: 10;
+	}
+
+	// Cards for five step process
+	.five-step-process-cards {
+		z-index: 10;
+		h5,
+		span {
+			color: $green-color;
+		}
+	}
+
+	.diagnostics-card {
+		position: absolute;
+		top: 16%;
+		left: 1%;
+		display: none;
+	}
+
+	.validation-design-card {
+		position: absolute;
+		top: 33%;
+		right: 1%;
+		display: none;
+	}
+
+	.implementation-card {
+		position: absolute;
+		bottom: 52%;
+		left: 1%;
+		display: none;
+	}
+
+	.live-operation-card {
+		position: absolute;
+		bottom: 25%;
+		display: none;
+		right: 1%;
+	}
+
+	.after-action-review-card {
+		position: absolute;
+		bottom: 17%;
+		left: 1%;
+		display: none;
+	}
+}
+
+// OUR SERVICE MODEL
+.our-service-model {
+	background: white;
+
+	h1 {
+		color: $green-color;
+		padding: 10px;
+	}
+
+	h3 {
+		text-align: center;
+		color: $green-color;
+		margin: 60px 0px;
+	}
+
+	.organization,
+	.jobs {
+		h4 {
+			color: $green-color;
+		}
+	}
+}
+
+//  WHO WE ARE
+// Slider
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+	background: #fffffff1;
+}
+
+/* Slides */
+.mySlides {
+	display: none;
+	padding: 55px 80px 25px 80px;
+	text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 30px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+	text-align: center;
+	padding: 20px;
+	background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.slider .active,
+.slider .dot:hover {
+	background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+	font-style: italic;
+	font-size: 1.2rem;
+}
+
+/* Add a blue color to the author */
+.author {
+	color: $green-color;
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.who-we-are {
+	.heading h1 {
+		color: $green-color;
+		padding: 10px;
+		font-size: 2.5rem;
+		margin: 30px 0px;
+	}
+	.heading p {
+		color: $green-color;
+		padding: 2px 0px 5px 10px;
+		font-size: 1.2rem;
+		padding: 10px;
+		margin: 30px 0px;
+	}
+}
+
+.who-we-work-with {
+	.who-we-work-with-row {
+		padding: 10px;
+		margin: 30px 0px;
+
+		h1 {
+			color: $green-color;
+			padding: 10px;
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+// Footer
+footer {
+	li a {
+		color: white !important;
+		text-decoration: none;
+	}
+}
+
+// MEDIA QUERIES
+@media (max-width: 992px) {
+	header {
+		.logo-img {
+			width: 220px !important;
+			height: auto;
+		}
+
+		.navbar-collapse {
+			background: white;
+			z-index: 10;
+		}
+
+		.nav-item .nav-link {
+			color: black !important;
+		}
+
+		.navbar-toggler {
+			border: 2px solid white;
+		}
+
+		nav .navbar-nav li a {
+			color: black;
+		}
+	}
+
+	.hero h1 {
+		font-size: 3rem;
+	}
+
+	.partnership p {
+		font-size: 20px;
+	}
+
+	figure {
+		display: none;
+	}
+
+	.what-we-offer-div {
+		max-width: 100%;
+		flex-direction: column;
+		text-align: center;
+		display: block !important;
+	}
+	.what-we-offer-div .left-part {
+		max-width: 100% !important;
+		margin: 70px 0px 0px 0px !important;
+		display: block;
+	}
+
+	.what-we-offer .what-we-offer-div .strategic-hr-support {
+		max-width: 100% !important;
+	}
+}
+
+@media (max-width: 768) {
+}
+
+@media (max-width: 576px) {
 }
