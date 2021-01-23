@@ -139,7 +139,7 @@ nav {
 	height: 100vh;
 	background: white;
 	position: relative;
-	overflow: hidden;
+	z-index: 1;
 
 	.what-we-offer-div {
 		display: flex;
@@ -169,6 +169,11 @@ nav {
 
 		figure {
 			height: 100vh;
+			position: absolute;
+			left: 50%;
+			top: 0%;
+			transform: translate(-50%, 0%);
+			z-index: 0;
 
 			img {
 				height: 100%;
@@ -176,10 +181,12 @@ nav {
 		}
 
 		.strategic-hr-support {
-			margin: 70px 30px;
-			max-width: 16%;
+			margin: 200px 30px;
+			padding: 40px;
+			max-width: 20%;
 			height: 50px;
 			cursor: pointer;
+			text-align: center;
 
 			h3 {
 				color: #6a6e72;
@@ -212,10 +219,11 @@ nav {
 	.hover-cards {
 		color: $text-color;
 		position: absolute;
-		bottom: 10%;
-		right: 0;
+		top: 20%;
+		right: 34%;
+
 		display: none;
-		transition: 0.4s ease-in-out;
+		z-index: 10;
 
 		h5 {
 			color: rgb(90, 35, 25);
@@ -225,10 +233,10 @@ nav {
 	.hover-card-2 {
 		color: $text-color;
 		position: absolute;
-		bottom: 20%;
-		left: 5%;
+		top: 12%;
+		left: 25%;
+		z-index: 300;
 		display: none;
-		transition: 0.4s ease-in-out;
 
 		h5 {
 			color: rgb(90, 35, 25);
@@ -247,6 +255,12 @@ nav {
 	z-index: 10;
 	position: relative;
 
+	.diagnostics-container {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
 	.diagnostics {
 		margin: 150px 0px;
 		cursor: pointer;
@@ -257,7 +271,7 @@ nav {
 			letter-spacing: 0.04em;
 			font-size: 30px;
 			line-height: 1.5;
-			border: 1px solid $green-color;
+
 			border-radius: 10px;
 			padding: 8px 50px;
 			text-align: center;
@@ -291,7 +305,6 @@ nav {
 			letter-spacing: 0.08em;
 			font-size: 1.3rem;
 			line-height: 1.1;
-
 			margin-top: 30px;
 		}
 		.five-step-process {
@@ -300,7 +313,7 @@ nav {
 			letter-spacing: 0.04em;
 			font-size: 30px;
 			line-height: 1.5;
-			border: 1px solid $green-color;
+
 			border-radius: 10px;
 			padding: 8px 50px;
 			text-align: center;
@@ -317,9 +330,14 @@ nav {
 	.after-act {
 		position: relative;
 	}
+
+	.live-opper {
+		margin: 0px !important;
+	}
 	.live-op .col-md-5 {
 		position: absolute;
 		right: 20px;
+
 		z-index: 10;
 	}
 
@@ -334,36 +352,36 @@ nav {
 
 	.diagnostics-card {
 		position: absolute;
-		top: 16%;
+		top: 25%;
 		left: 1%;
 		display: none;
 	}
 
 	.validation-design-card {
 		position: absolute;
-		top: 33%;
+		top: 32%;
 		right: 1%;
 		display: none;
 	}
 
 	.implementation-card {
 		position: absolute;
-		bottom: 52%;
-		left: 1%;
+		bottom: 51%;
+		left: 3%;
 		display: none;
 	}
 
 	.live-operation-card {
 		position: absolute;
-		bottom: 25%;
+		bottom: 20%;
 		display: none;
 		right: 1%;
 	}
 
 	.after-action-review-card {
 		position: absolute;
-		bottom: 17%;
-		left: 1%;
+		bottom: 15%;
+		left: 3%;
 		display: none;
 	}
 }
@@ -371,6 +389,7 @@ nav {
 // OUR SERVICE MODEL
 .our-service-model {
 	background: white;
+	position: relative;
 
 	h1 {
 		color: $green-color;
@@ -388,6 +407,15 @@ nav {
 		h4 {
 			color: $green-color;
 		}
+	}
+
+	// Arrows
+	.arrows {
+		position: absolute;
+		top: 58%;
+		left: 50%;
+		transform: translate(-55%, -50%);
+		width: 550px;
 	}
 }
 
@@ -440,7 +468,6 @@ nav {
 .dot-container {
 	text-align: center;
 	padding: 20px;
-	background: #ddd;
 }
 
 /* The dots/bullets/indicators */
@@ -479,14 +506,14 @@ q {
 		color: $green-color;
 		padding: 10px;
 		font-size: 2.5rem;
-		margin: 30px 0px;
+		margin: 30px 0px 0px 0px;
 	}
 	.heading p {
 		color: $green-color;
 		padding: 2px 0px 5px 10px;
 		font-size: 1.2rem;
-		padding: 10px;
-		margin: 30px 0px;
+
+		// margin: 0px 0px;
 	}
 }
 
@@ -542,24 +569,77 @@ footer {
 		}
 	}
 
+	// hero section
 	.hero h1 {
 		font-size: 3rem;
 	}
-
-	.partnership p {
-		font-size: 20px;
+	// Partners
+	.partners {
+		position: relative;
 	}
 
-	figure {
-		display: none;
+	.partners p {
+		font-size: 1rem;
 	}
 
+	// What we Oferr
 	.what-we-offer-div {
 		max-width: 100%;
 		flex-direction: column;
 		text-align: center;
 		display: block !important;
+
+		figure {
+			display: none;
+		}
+
+		.strategic-hr-support {
+			margin: 0px !important;
+			padding: 40px;
+		}
 	}
+
+	.hr-operation-support {
+		top: 70% !important;
+		left: 50% !important;
+		transform: translate(-50%, -60%);
+		width: 100%;
+		text-align: center;
+	}
+
+	.hover-cards {
+		top: 30% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+		line-height: 1;
+
+		h5 {
+			font-size: 14px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+	}
+
+	.hover-card-2 {
+		position: absolute;
+		bottom: 5% !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+		width: 35rem !important;
+		line-height: 1;
+		display: none;
+
+		h5 {
+			font-size: 14px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+	}
+
 	.what-we-offer-div .left-part {
 		max-width: 100% !important;
 		margin: 70px 0px 0px 0px !important;
@@ -569,9 +649,208 @@ footer {
 	.what-we-offer .what-we-offer-div .strategic-hr-support {
 		max-width: 100% !important;
 	}
+
+	// our-process
+	.our-process {
+		figure {
+			display: none;
+		}
+
+		.process-div {
+			h1 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.1rem;
+			}
+
+			.validation-design {
+				font-size: 1.4rem;
+				text-align: center;
+				padding: 0px;
+			}
+		}
+
+		p {
+			font-size: 1.4rem !important;
+		}
+	}
+
+	// OUR SERVICE MODEL
+	.our-service-model {
+		.bootom-div {
+			margin: 180px 0px 0px 0px;
+			justify-content: space-between;
+		}
+
+		.arrows {
+			width: 330px;
+			top: 45%;
+		}
+	}
+
+	// who-we-are
+	.who-we-are {
+		.heading {
+			width: 100% !important;
+			text-align: center;
+			h1 {
+				br {
+					display: none;
+				}
+			}
+		}
+
+		.slider {
+			width: 100% !important;
+		}
+	}
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
+	header {
+		.logo-img {
+			width: 150px !important;
+			height: auto;
+		}
+	}
+
+	// hero section
+	.hero h1 {
+		font-size: 2rem;
+	}
+	// Partners
+	.partners {
+		position: relative;
+	}
+
+	.partners p {
+		font-size: 14px;
+	}
+
+	//OUR MISSSION
+	.our-mission h1 {
+		font-size: 3rem !important;
+	}
+
+	.our-mission p {
+		font-size: 1rem !important;
+	}
+
+	// our-process
+	.our-process {
+		h1,
+		p {
+			text-align: center !important;
+		}
+		.row {
+			flex-direction: column-reverse;
+			padding: 0px !important;
+		}
+		.card {
+			width: 20rem !important;
+		}
+		.c1 h5,
+		.c2 h5,
+		.c3 h5,
+		.c4 h5,
+		.c5 h5 {
+			font-size: 14px !important;
+		}
+		.c1 p,
+		.c2 p,
+		.c3 p,
+		.c4 p,
+		.c5 p {
+			text-align: left !important;
+			font-size: 12px !important;
+		}
+		.c1 {
+			top: 40%;
+		}
+		.c2 {
+			top: 25%;
+		}
+		.c3 {
+			top: 52%;
+			left: 20%;
+		}
+		.c5 {
+			bottom: 12%;
+			left: 20%;
+		}
+
+		.live-op .col-md-5 {
+			position: static !important;
+		}
+	}
+
+	// OUR SERVICE MODEL
+	.our-service-model {
+		img {
+			width: 300px !important;
+		}
+		.arrows {
+			display: none;
+		}
+
+		.bootom-div h4 {
+			font-size: 18px;
+		}
+
+		.bootom-div p {
+			font-size: 16px;
+		}
+	}
+
+	// who-we-are
+	.who-we-are {
+		.heading {
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			p {
+				font-size: 20px;
+			}
+		}
+
+		.slider {
+			q {
+				font-size: 16px !important;
+			}
+
+			.author {
+				font-size: 1rem !important;
+			}
+		}
+	}
+
+	// Who we work with
+	.who-we-work-with {
+		text-align: center;
+
+		h1 {
+			font-size: 1.7rem !important;
+		}
+
+		p {
+			font-size: 1rem !important;
+		}
+
+		img {
+			width: 300px;
+		}
+	}
+
+	// footer
+	footer {
+		.footer-logo-container {
+			max-width: 70% !important;
+			margin: auto;
+		}
+	}
 }
 
 @media (max-width: 576px) {
